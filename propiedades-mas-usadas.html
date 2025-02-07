@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades mas usadas</title>
+    <style>
+        section{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+        }
+        .card{
+            width: 300px;
+            height: 300px;
+            background: papayawhip;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .card img{
+            width: 100%;
+        }
+        .card p {
+            text-align: center;
+        }
+        .card p:nth-child(3){
+            color: turquoise;
+        }
+/*  */
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #fddde6, #d4e2d4);
+        }
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 20px;
+        }
+        .cardAca {
+            width: 350px;
+            background: linear-gradient(145deg, #ffe5b4, #ffd1dc);
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .cardAca::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+            opacity: 0.2;
+        }
+        .cardAca img {
+            width: 100%;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+        .cardAca h2 {
+            margin: 10px 0;
+            color: #333;
+        }
+        .cardAca p {
+            color: #666;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Gato dormido">
+            <p>Gato: Dormido</p>
+            <p>Love</p>
+        </div>
+
+    </section>
+    <section>
+        <div class="cardAca">
+            <img src="https://images.pexels.com/photos/5078916/pexels-photo-5078916.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen de Acapulco">
+            <h2>Acapulco</h2>
+            <p>Población: 779,566 (2020)</p>
+            <p>Año de fundación: 1550</p>
+            <p>Un destino turístico icónico con playas espectaculares y vibrante vida nocturna.</p>
+        </div>
+    </section>
+</body>
+</html>

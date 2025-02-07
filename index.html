@@ -3,26 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Anotaciones Platzi Curso Frontend Developer</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 10px;
+            width: 80%;
+            height: 80vh;
+        }
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .header {
+            background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+            grid-column: 1 / 5;
+            grid-row: 1 / 2;
+        }
+        .sidebar {
+            background: linear-gradient(135deg, #11998e, #38ef7d);
+            grid-column: 1 / 2;
+            grid-row: 2 / 5;
+        }
+        .main {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            grid-column: 2 / 5;
+            grid-row: 2 / 4;
+        }
+        .footer {
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            grid-column: 2 / 5;
+            grid-row: 4 / 5;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        Hola
-    </header>
-    <nav>
-
-    </nav>
-    <section>
-        <div>
-            <img src="https://images.pexels.com/photos/1741205/pexels-photo-1741205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Gato">
-        </div>
-        <h1>Cats</h1>
-        <p>Cats are awesome</p>
-        <form action="" method="get">
-            <label for="name">Nombre</label>
-            <input type="text" id="name">
-        </form>
-        <a href="https://platzi.com/home/">Platzi.com</a>
-    </section>
+    <div class="container">
+        <div class="item header">Header</div>
+        <div class="item sidebar">Sidebar</div>
+        <div class="item main">Main Content</div>
+        <div class="item footer">Footer</div>
+    </div>
 </body>
 </html>

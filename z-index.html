@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z - Index</title>
+    <style>
+        div{
+            position: absolute;
+            background: palegoldenrod;
+        }
+        .one{
+            z-index: 5;
+        }
+        .two{
+            z-index: 4;
+        }
+        .red{
+            width: 200px;
+            height: 200px;
+            background: red;
+            z-index: 5;
+            top: 90px;
+        }
+        .blue{
+            width: 200px;
+            height: 200px;
+            background: blue;
+            z-index: 4;
+            top: 60px;
+        }
+        .yellow{
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            z-index: 3;
+            top: 30px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .demo {
+            position: relative;
+            width: 250px;
+            height: 250px;
+        }
+        .circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .circle1 {
+            background: radial-gradient(circle, red, transparent);
+            top: 10px;
+            left: 0px;
+            z-index: 1;
+        }
+        .circle2 {
+            background: radial-gradient(circle, blue, transparent);
+            top: 80px;
+            left: 60px;
+            z-index: 2;
+        }
+        .circle3 {
+            background: radial-gradient(circle, green, transparent);
+            top: 10px;
+            left: 120px;
+            z-index: 3;
+        }
+        .circle4 {
+            background: radial-gradient(circle, yellow, transparent);
+            top: 80px;
+            left: 180px;
+            z-index: 4;
+        }
+    </style>
+</head>
+    <!-- <div class="one">Francisco</div>
+    <div class="two">Gerardo</div> -->
+<body>
+    <section>
+        <div class="red">Red - z-index: 5;</div>
+        <div class="blue">Blue - z-index: 4;</div>
+        <div class="yellow">Yellow - z-index: 3;</div>
+    </section>
+    <section class="demo">
+        <div class="circle circle1">F</div>
+        <div class="circle circle2">G</div>
+        <div class="circle circle3">S</div>
+        <div class="circle circle4">M</div>
+    </section>
+</body>
+</html>
+
+<img src="https://i.imgur.com/uPTayWB.png" alt="Ejecicio de Z-Index">
